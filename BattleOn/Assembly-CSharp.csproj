@@ -1,0 +1,490 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+	<Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+	<Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+	<ProductVersion>10.0.20506</ProductVersion>
+	<SchemaVersion>2.0</SchemaVersion>
+	<ProjectGuid>{E2DEDAAD-98EA-B528-711D-4A28D39A9174}</ProjectGuid>
+	<OutputType>Library</OutputType>
+	<AppDesignerFolder>Properties</AppDesignerFolder>
+	<RootNamespace></RootNamespace>
+	<AssemblyName>Assembly-CSharp</AssemblyName>
+	<TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+	<FileAlignment>512</FileAlignment>
+	<BaseDirectory>Assets</BaseDirectory>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+	<DebugSymbols>true</DebugSymbols>
+	<DebugType>full</DebugType>
+	<Optimize>false</Optimize>
+	<OutputPath>Temp\bin\Debug\</OutputPath>
+	<DefineConstants>DEBUG;TRACE;UNITY_5_1_2;UNITY_5_1;UNITY_5;ENABLE_NEW_BUGREPORTER;ENABLE_2D_PHYSICS;ENABLE_4_6_FEATURES;ENABLE_AUDIO;ENABLE_CACHING;ENABLE_CLOTH;ENABLE_DUCK_TYPING;ENABLE_FRAME_DEBUGGER;ENABLE_GENERICS;ENABLE_HOME_SCREEN;ENABLE_IMAGEEFFECTS;ENABLE_LIGHT_PROBES_LEGACY;ENABLE_MICROPHONE;ENABLE_MULTIPLE_DISPLAYS;ENABLE_PHYSICS;ENABLE_PHYSICS_PHYSX3;ENABLE_PLUGIN_INSPECTOR;ENABLE_SHADOWS;ENABLE_SINGLE_INSTANCE_BUILD_SETTING;ENABLE_SPRITES;ENABLE_TERRAIN;ENABLE_UNET;ENABLE_UNITYEVENTS;ENABLE_VR;ENABLE_WEBCAM;ENABLE_WWW;ENABLE_CLOUD_SERVICES;ENABLE_CLOUD_SERVICES_ANALYTICS;ENABLE_CLOUD_SERVICES_UNET;ENABLE_CLOUD_LICENSE;ENABLE_AUDIOMIXER_SUSPEND;ENABLE_EDITOR_METRICS;INCLUDE_DYNAMIC_GI;INCLUDE_GI;INCLUDE_IL2CPP;INCLUDE_DIRECTX12;PLATFORM_SUPPORTS_MONO;RENDER_SOFTWARE_CURSOR;ENABLE_LOCALIZATION;UNITY_STANDALONE_WIN;UNITY_STANDALONE;ENABLE_SUBSTANCE;ENABLE_TEXTUREID_MAP;ENABLE_RUNTIME_GI;ENABLE_MOVIES;ENABLE_NETWORK;ENABLE_CRUNCH_TEXTURE_COMPRESSION;ENABLE_WEBSOCKET_HOST;ENABLE_MONO;ENABLE_PROFILER;DEBUG;TRACE;UNITY_ASSERTIONS;UNITY_EDITOR;UNITY_EDITOR_64;UNITY_EDITOR_WIN</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+	<DebugType>pdbonly</DebugType>
+	<Optimize>true</Optimize>
+	<OutputPath>Temp\bin\Release\</OutputPath>
+	<DefineConstants>TRACE</DefineConstants>
+	<ErrorReport>prompt</ErrorReport>
+	<WarningLevel>4</WarningLevel>
+	<NoWarn>0169</NoWarn>
+  </PropertyGroup>
+  <ItemGroup>
+	<Reference Include="System" />
+    <Reference Include="System.XML" />
+	<Reference Include="System.Core" />
+	<Reference Include="System.Xml.Linq" />
+	<Reference Include="UnityEngine">
+	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEngine.dll</HintPath>
+	</Reference>
+	<Reference Include="UnityEditor">
+	  <HintPath>E:/Unity/Editor/Data/Managed/UnityEditor.dll</HintPath>
+	</Reference>
+  </ItemGroup>
+  <ItemGroup>
+     <Compile Include="Assets\BattleOnGame\Engine\GameEngine.cs" />
+     <Compile Include="Assets\BattleOnGame\Match\DialogType.cs" />
+     <Compile Include="Assets\BattleOnGame\Match\Dialogs.cs" />
+     <Compile Include="Assets\BattleOnGame\Match\Match.cs" />
+     <Compile Include="Assets\BattleOnGame\Match\MatchParameters.cs" />
+     <Compile Include="Assets\BattleOnGame\Match\MessageLog.cs" />
+     <Compile Include="Assets\BattleOnGame\TextureContent.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\Card\CardViewModel.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\Deck\DeckLibrary.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\Deck\DeckView.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\Deck\DeckViewModel.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\FPS.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\Library\LibraryFilter.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\Library\LibraryItem.cs" />
+     <Compile Include="Assets\BattleOnGame\UserInterface\Settings.cs" />
+     <Compile Include="Assets\BattleOnGame\ViewModelBase.cs" />
+     <Compile Include="Assets\Screens\Deck\DeckScreen.cs" />
+     <Compile Include="Assets\Screens\MainMenu.cs" />
+     <Compile Include="Assets\Screens\Play.cs" />
+     <Compile Include="Assets\Screens\PlayRandom.cs" />
+     <Compile Include="Assets\Screens\ScreenManager\GameScreen.cs" />
+     <Compile Include="Assets\Screens\ScreenManager\InputState.cs" />
+     <Compile Include="Assets\Screens\ScreenManager\ScreenManager.cs" />
+     <Compile Include="Assets\Screens\ScreenManager\ScreenResolution.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Aatrox.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Ahri.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Akali.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Alistar.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Amumu.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Anivia.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Annie.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Ashe.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Azir.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Bard.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Blitzcrank.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Brand.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Braum.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Caitlyn.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Cassiopeia.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Arrow.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Dyrus.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Faker.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Imp.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Madlife.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Marin.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Space.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Champions\Wolf.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\ChoGath.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Corki.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Darius.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Diana.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\DrMundo.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Draven.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Ekko.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Elise.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Evelyn.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Ezreal.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Fiddlesticks.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Fiora.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Fizz.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Galio.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Gangplank.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Garen.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Gnar.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Grages.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Graves.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Hecarim.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Himerdinger.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Irelia.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Janna.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\JavanIV.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Jax.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Jayce.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Jinx.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Kalista.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Karma.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Karthus.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Kassadin.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Katarina.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Kayle.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Kennen.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\KhaZix.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\KogMaw.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\LeBlanc.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\LeeSin.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Leona.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Lissandra.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Lucian.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Lulu.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Lux.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Malphite.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Malzahar.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Maokai.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\MasterYi.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\MissFortune.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Mordekaiser.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Morgana.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Nami.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Nasus.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Natulius.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Nidalee.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Nocturne.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Nunu.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Olaf.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Orianna.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Pantheon.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Poppy.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Quinn.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Rammus.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\RekSai.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Renekton.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Rengar.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Riven.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Rumble.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Ryze.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Sejuani.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Shaco.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Shyvana.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Singed.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Sion.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Sivir.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Skarner.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Sona.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Soraka.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Barrier.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Clarity.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Clarvoyance.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Cleanse.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Coin.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Exhaust.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Flash.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Garrison.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Ghost.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Heal.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Ignite.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Mark.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Smite.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\SummonerSpells\Teleport.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Swain.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Syndra.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\TahmKench.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Talon.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Taric.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Teemo.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Thresh.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Tristana.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Trundle.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Tryndamere.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\TwistedFate.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Twitch.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Udyr.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Urgot.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Varus.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Vayne.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Veigar.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\VelKoz.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Vi.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Viktor.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Vladimir.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Volibear.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Warwick.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Wukong.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Xerath.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\XinZhao.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Yasuo.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Yorick.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Zac.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Zed.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Ziggs.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Zilean.cs" />
+     <Compile Include="Assets\Scripts\CardLibrary\Zyra.cs" />
+     <Compile Include="Assets\Scripts\Engine.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Abilitys\Ability.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Abilitys\IStaticAbilities.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Abilitys\SimpleAbilities.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Abilitys\SimpleAbility.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Card.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\CardController.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\CardInfo.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\CardParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\CardTemplate.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\CardTemplateSource.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\CardText.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Cards.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\CardsSearch.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\Damage.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\DamageFromSource.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\DamagePrevention.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\DamagePreventions.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\DamageRedirection.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\DamageRedirections.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\IDamageable.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\PreventDamageParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Damage\Strenght.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Events\AttachmentAttachedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Events\AttachmentDetachedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Events\CardWasRevealedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Events\DamageDealtEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Events\PermanentModifiedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Level.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Life\IHasLife.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Life\Lifetime.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Type\CardType.cs" />
+     <Compile Include="Assets\Scripts\Engine\Card\Type\CardTypeCharacteristic.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Attacker\AssignCombatDamage.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Attacker\Attacker.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Attacker\AttackerEvaluation.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Attacker\AttackerEvaluationParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Attacker\AttackerSelected.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Attacker\DamageDistribution.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Combat.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Defender\Blocker.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Defender\BlockerEvaluation.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\Defender\BlockerEvaluationParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Combat\QuickCombat.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\BooleanResult.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\ChosenBlockers.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\ChosenCards.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\ChosenPlayable.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\ChosenPlayer.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\ControlledBy.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\Decision.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\DecisionHandler.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\DecisionQueue.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\DeclareAttackers.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\DeclareBlockers.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\DiscardCards.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\IDecisionHandler.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\IPlayable.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\Ordering.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\Pass.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\PlaySpellOrAbility.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\Pramaters\GetTargetCountParam.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\Pramaters\IsValidTargetParam.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\Pramaters\IsValidZoneParam.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\ScenarioEffect.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\SelectStartingPlayer.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\TakeMulligan.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\TargetSpecs.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\TargetValidatorParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Decision\Targets.cs" />
+     <Compile Include="Assets\Scripts\Engine\Deck\Deck.cs" />
+     <Compile Include="Assets\Scripts\Engine\Deck\DeckFile.cs" />
+     <Compile Include="Assets\Scripts\Engine\Deck\DeckRow.cs" />
+     <Compile Include="Assets\Scripts\Engine\Effects\Effect.cs" />
+     <Compile Include="Assets\Scripts\Engine\Effects\EffectParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Effects\EffectTag.cs" />
+     <Compile Include="Assets\Scripts\Engine\Effects\IDynamicParameter.cs" />
+     <Compile Include="Assets\Scripts\Engine\Effects\IEffectSource.cs" />
+     <Compile Include="Assets\Scripts\Engine\Effects\SpellCounterReason.cs" />
+     <Compile Include="Assets\Scripts\Engine\Effects\TriggerOrder.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\AssignedDamageDealtEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\AttachmentLifetime.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\AttackerJoinedCombatEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\BlockerJoinedCombatEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\ControllerChangedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\EffectPutOnStackEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\EffectResolvedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\EndOfTurnLifetime.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\ICardActivationEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\LevelChangedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\LifeChangedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\OptionsChosenEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\OwningCardLifetime.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\PlayerFlippedCoinEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\PlayerTookMulliganEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\PushTriggeredEffects.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\RemovedFromCombatEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\SpellCastEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\SpellPutOnStackEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\StackChangedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\StepFinishedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\StepStartedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\TurnEvents.cs" />
+     <Compile Include="Assets\Scripts\Engine\Event\TurnStartedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\GameObject.cs" />
+     <Compile Include="Assets\Scripts\Engine\GameParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\MagicSet.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\CardColor.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\CardColors.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\CostModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\CostModifiers.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\IHasColors.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\IManaAmount.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\IManaSource.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\Mana.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\ManaCache.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\ManaColor.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\ManaCounts.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\ManaParser.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\ManaUnit.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\ManaUsage.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\MultiColorManaAmount.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\SingleColorManaAmount.cs" />
+     <Compile Include="Assets\Scripts\Engine\Mana\ZeroManaAmount.cs" />
+     <Compile Include="Assets\Scripts\Engine\Media\MediaLibrary.cs" />
+     <Compile Include="Assets\Scripts\Engine\Media\Resource.cs" />
+     <Compile Include="Assets\Scripts\Engine\Media\ResourceFolder.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\Characteristic.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\IAcceptsCardModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\ICardModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\IModifiable.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\IModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\Modifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\ModifierParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Card\TypeChangedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Engine\IGameModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\IAcceptsGameModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Player\IAcceptsPlayerModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Player\IPlayerModifier.cs" />
+     <Compile Include="Assets\Scripts\Engine\Modifier\Value.cs" />
+     <Compile Include="Assets\Scripts\Engine\Player\Life.cs" />
+     <Compile Include="Assets\Scripts\Engine\Player\Player.cs" />
+     <Compile Include="Assets\Scripts\Engine\Player\PlayerParameters.cs" />
+     <Compile Include="Assets\Scripts\Engine\Player\PlayerType.cs" />
+     <Compile Include="Assets\Scripts\Engine\Player\Players.cs" />
+     <Compile Include="Assets\Scripts\Engine\Player\SkipSteps.cs" />
+     <Compile Include="Assets\Scripts\Engine\Player\Step.cs" />
+     <Compile Include="Assets\Scripts\Engine\Rarity.cs" />
+     <Compile Include="Assets\Scripts\Engine\ScoreCalculator.cs" />
+     <Compile Include="Assets\Scripts\Engine\Scores.cs" />
+     <Compile Include="Assets\Scripts\Engine\SerializationContext.cs" />
+     <Compile Include="Assets\Scripts\Engine\State\StateMachine.cs" />
+     <Compile Include="Assets\Scripts\Engine\State\TurnInfo.cs" />
+     <Compile Include="Assets\Scripts\Engine\Targeting\ITarget.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Battlefield.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Exile.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Graveyard.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Hand.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Library.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\NullZone.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Query\IBattlefieldQuery.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Query\IGraveyardQuery.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Query\IHandQuery.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Query\ILibraryQuery.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Query\IZoneQuery.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\ScoreOverride.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Stack.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Type\OrderedZone.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Type\UnorderedZone.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\Zone.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\ZoneChangedEvent.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\ZoneChangedEventArgs.cs" />
+     <Compile Include="Assets\Scripts\Engine\Zone\ZoneSpecs.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\Bindable.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\CollectionUtils.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\CopyableAttribute.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\INotifyPropertyChangedRaiser.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\IReceive.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\ParameterlessCtor.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\PropertyModifier.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\Publisher.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\RandomEx.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\RandomGenerator.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\StringUtils.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\Trackables.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\UpdatesAttribute.cs" />
+     <Compile Include="Assets\Scripts\Infrastructure\Value.cs" />
+     <Compile Include="Assets\Scripts\obj\Debug\TemporaryGeneratedFile_036C0B5B-1481-4323-8D20-8F5ADCB23D92.cs" />
+     <Compile Include="Assets\Scripts\obj\Debug\TemporaryGeneratedFile_5937a670-0e60-4077-877b-f7221da3dda1.cs" />
+     <Compile Include="Assets\Scripts\obj\Debug\TemporaryGeneratedFile_E7A71F73-0F8D-4B9B-B56E-8E70B10BC5D3.cs" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.XAudio2.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.Direct3D11.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\MonoGame.Framework.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.Direct3D9.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.MediaFoundation.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.XInput.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.DXGI.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.RawInput.xml" />
+     <None Include="Assets\BattleOnGame\bin\Windows\Debug\SharpDX.Direct2D1.xml" />
+ <Reference Include="UnityEngine.UI">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/GUISystem/UnityEngine.UI.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Networking">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/Networking/UnityEngine.Networking.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEngine.Analytics">
+ <HintPath>E:/Unity/Editor/Data/UnityExtensions/Unity/UnityAnalytics/UnityEngine.Analytics.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.XInput">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.XInput.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.MediaFoundation">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.MediaFoundation.dll</HintPath>
+ </Reference>
+ <Reference Include="Castle.Windsor">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/Castle.Windsor.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.RawInput">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.RawInput.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.XAudio2">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.XAudio2.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.Direct3D9">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.Direct3D9.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.Direct3D11">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.Direct3D11.dll</HintPath>
+ </Reference>
+ <Reference Include="Ionic.Zip">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/Ionic.Zip.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.Direct2D1">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.Direct2D1.dll</HintPath>
+ </Reference>
+ <Reference Include="SharpDX.DXGI">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/SharpDX.DXGI.dll</HintPath>
+ </Reference>
+ <Reference Include="Castle.Core">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/Castle.Core.dll</HintPath>
+ </Reference>
+ <Reference Include="Lucene.Net">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/Lucene.Net.dll</HintPath>
+ </Reference>
+ <Reference Include="System.Windows.Interactivity">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/System.Windows.Interactivity.dll</HintPath>
+ </Reference>
+ <Reference Include="Caliburn.Micro">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/Caliburn.Micro.dll</HintPath>
+ </Reference>
+ <Reference Include="MonoGame.Framework">
+ <HintPath>C:/Users/Matthew/Desktop/Github/BattleOn/BattleOn/Assets/BattleOnGame/bin/Windows/Debug/MonoGame.Framework.dll</HintPath>
+ </Reference>
+ <Reference Include="UnityEditor.iOS.Extensions.Xcode">
+ <HintPath>E:/Unity/Editor/Data/PlaybackEngines/iOSSupport/UnityEditor.iOS.Extensions.Xcode.dll</HintPath>
+ </Reference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+	   Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  
+</Project>
